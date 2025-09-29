@@ -43,7 +43,7 @@ Kaveri Manga</h1>
               <Button size="lg" variant="secondary" className="bg-white/20 text-white border-white/30 hover:bg-white/30 backdrop-blur-sm transition-smooth hover-glow" onClick={() => scrollToSection("#projects")}>
                 View My Work
               </Button>
-              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/20 backdrop-blur-sm transition-smooth" onClick={() => scrollToSection("#contact")}>
+              <Button size="lg" variant="outline" onClick={() => scrollToSection("#contact")} className="border-white/30 backdrop-blur-sm transition-smooth bg-indigo-300 hover:bg-indigo-200 text-slate-50">
                 <Download className="mr-2 h-4 w-4" />
                 Download Resume
               </Button>
