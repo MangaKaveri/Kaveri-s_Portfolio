@@ -1,10 +1,27 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Award, Trophy } from "lucide-react";
+
 const About = () => {
-  const certifications = ["AI/ML for Geodata Analysis – ISRO", "Python for Data Science – IIT Madras", "Generative AI – NxtWave", "Data Science & Visualization – IBM", "Cybersecurity Fundamentals – Cisco", "Google Cloud Generative AI – Google"];
-  const achievements = ["99.17% in SSC Board Examinations", "89.5% in Intermediate Board", "78.44% Current CGPA in B.Tech", "Multiple Technical Internships", "AI/ML Competition Participant"];
-  return <section id="about" className="py-20 bg-gradient-soft">
+  const certifications = [
+    "AI/ML for Geodata Analysis – ISRO",
+    "Python for Data Science – IIT Madras",
+    "Generative AI – NxtWave",
+    "Data Science & Visualization – IBM",
+    "Cybersecurity Fundamentals – Cisco",
+    "Google Cloud Generative AI – Google"
+  ];
+
+  const achievements = [
+    "99.17% in SSC Board Examinations",
+    "89.5% in Intermediate Board",
+    "78.44% Current CGPA in B.Tech",
+    "Multiple Technical Internships",
+    "AI/ML Competition Participant"
+  ];
+
+  return (
+    <section id="about" className="py-20 bg-gradient-soft">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-4">About Me</h2>
@@ -51,16 +68,31 @@ const About = () => {
                 <h3 className="text-xl font-semibold">Certifications</h3>
               </div>
               <div className="space-y-2">
-                {certifications.map((cert, index) => <Badge key={index} variant="outline" className="text-xs block w-full text-left justify-start p-2">
+                {certifications.map((cert, index) => (
+                  <Badge key={index} variant="outline" className="text-xs block w-full text-left justify-start p-2">
                     {cert}
-                  </Badge>)}
+                  </Badge>
+                ))}
               </div>
             </CardContent>
           </Card>
 
           {/* Achievements */}
           <Card className="shadow-elegant hover-glow transition-smooth md:col-span-2 lg:col-span-1">
-            
+            <CardContent className="p-6">
+              <div className="flex items-center mb-4">
+                <Trophy className="h-8 w-8 text-accent mr-3" />
+                <h3 className="text-xl font-semibold">Achievements</h3>
+              </div>
+              <div className="space-y-3">
+                {achievements.map((achievement, index) => (
+                  <div key={index} className="flex items-start space-x-2">
+                    <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
+                    <p className="text-sm text-foreground">{achievement}</p>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
           </Card>
         </div>
 
@@ -78,6 +110,8 @@ const About = () => {
           </Card>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default About;
