@@ -40,7 +40,7 @@ Kaveri Manga</h1>
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Button size="lg" variant="secondary" className="bg-white/20 text-white border-white/30 hover:bg-white/30 backdrop-blur-sm transition-smooth hover-glow" onClick={() => scrollToSection("#projects")}>
+              <Button size="lg" variant="secondary" onClick={() => scrollToSection("#projects")} className="text-white border-white/30 backdrop-blur-sm transition-smooth hover-glow bg-indigo-300 hover:bg-indigo-200">
                 View My Work
               </Button>
               <Button size="lg" variant="outline" onClick={() => scrollToSection("#contact")} className="border-white/30 backdrop-blur-sm transition-smooth bg-indigo-300 hover:bg-indigo-200 text-slate-50">
