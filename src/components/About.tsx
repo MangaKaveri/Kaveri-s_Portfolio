@@ -59,20 +59,7 @@ const About = () => {
           </Card>
 
           {/* Achievements */}
-          <Card className="shadow-elegant hover-glow transition-smooth md:col-span-2 lg:col-span-1">
-            <CardContent className="p-6">
-              <div className="flex items-center mb-4">
-                <Trophy className="h-8 w-8 text-accent mr-3" />
-                <h3 className="text-xl font-semibold">Achievements</h3>
-              </div>
-              <div className="space-y-3">
-                {achievements.map((achievement, index) => <div key={index} className="flex items-start space-x-2">
-                    <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></div>
-                    <p className="text-sm text-foreground">{achievement}</p>
-                  </div>)}
-              </div>
-            </CardContent>
-          </Card>
+          
         </div>
 
         {/* Personal Description */}
