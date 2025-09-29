@@ -1,45 +1,39 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Github, MapPin, Phone } from "lucide-react";
-
 const Contact = () => {
-  const contactInfo = [
-    {
-      icon: Mail,
-      label: "Email",
-      value: "mangakaveri05@gmail.com",
-      href: "mailto:mangakaveri05@gmail.com",
-      color: "text-primary"
-    },
-    {
-      icon: Linkedin,
-      label: "LinkedIn",
-      value: "linkedin.com/in/mangakaveri",
-      href: "https://www.linkedin.com/in/mangakaveri/",
-      color: "text-secondary"
-    },
-    {
-      icon: Github,
-      label: "GitHub",
-      value: "github.com/MangaKaveri", 
-      href: "https://github.com/MangaKaveri",
-      color: "text-accent"
-    },
-    {
-      icon: MapPin,
-      label: "Location",
-      value: "Visakhapatnam, Andhra Pradesh, India",
-      href: null,
-      color: "text-muted-foreground"
-    }
-  ];
-
-  return (
-    <section id="contact" className="py-20 gradient-primary relative overflow-hidden">
+  const contactInfo = [{
+    icon: Mail,
+    label: "Email",
+    value: "mangakaveri05@gmail.com",
+    href: "mailto:mangakaveri05@gmail.com",
+    color: "text-primary"
+  }, {
+    icon: Linkedin,
+    label: "LinkedIn",
+    value: "linkedin.com/in/mangakaveri",
+    href: "https://www.linkedin.com/in/mangakaveri/",
+    color: "text-secondary"
+  }, {
+    icon: Github,
+    label: "GitHub",
+    value: "github.com/MangaKaveri",
+    href: "https://github.com/MangaKaveri",
+    color: "text-accent"
+  }, {
+    icon: MapPin,
+    label: "Location",
+    value: "Visakhapatnam, Andhra Pradesh, India",
+    href: null,
+    color: "text-muted-foreground"
+  }];
+  return <section id="contact" className="py-20 gradient-primary relative overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 rounded-full bg-white/5 animate-float"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 rounded-full bg-white/5 animate-float" style={{ animationDelay: "2s" }}></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 rounded-full bg-white/5 animate-float" style={{
+        animationDelay: "2s"
+      }}></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -57,9 +51,8 @@ const Contact = () => {
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold text-white mb-6">Contact Information</h3>
               {contactInfo.map((contact, index) => {
-                const IconComponent = contact.icon;
-                return (
-                  <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 hover-glow transition-smooth">
+              const IconComponent = contact.icon;
+              return <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 hover-glow transition-smooth">
                     <CardContent className="p-6">
                       <div className="flex items-center space-x-4">
                         <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
@@ -67,24 +60,14 @@ const Contact = () => {
                         </div>
                         <div>
                           <h4 className="text-white font-semibold">{contact.label}</h4>
-                          {contact.href ? (
-                            <a
-                              href={contact.href}
-                              target={contact.href.startsWith("http") ? "_blank" : undefined}
-                              rel={contact.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                              className="text-white/80 hover:text-white transition-smooth"
-                            >
+                          {contact.href ? <a href={contact.href} target={contact.href.startsWith("http") ? "_blank" : undefined} rel={contact.href.startsWith("http") ? "noopener noreferrer" : undefined} className="text-white/80 hover:text-white transition-smooth">
                               {contact.value}
-                            </a>
-                          ) : (
-                            <span className="text-white/80">{contact.value}</span>
-                          )}
+                            </a> : <span className="text-white/80">{contact.value}</span>}
                         </div>
                       </div>
                     </CardContent>
-                  </Card>
-                );
-              })}
+                  </Card>;
+            })}
             </div>
 
             {/* Call to Action */}
@@ -124,21 +107,11 @@ const Contact = () => {
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Button 
-                      className="bg-white/20 text-white border-white/30 hover:bg-white/30 backdrop-blur-sm flex-1"
-                      onClick={() => window.open("mailto:mangakaveri05@gmail.com", "_blank")}
-                    >
+                    <Button className="bg-white/20 text-white border-white/30 hover:bg-white/30 backdrop-blur-sm flex-1" onClick={() => window.open("mailto:mangakaveri05@gmail.com", "_blank")}>
                       <Mail className="h-4 w-4 mr-2" />
                       Send Email
                     </Button>
-                    <Button 
-                      variant="outline"
-                      className="border-white/30 text-white hover:bg-white/20 backdrop-blur-sm flex-1"
-                      onClick={() => window.open("https://www.linkedin.com/in/mangakaveri/", "_blank")}
-                    >
-                      <Linkedin className="h-4 w-4 mr-2" />
-                      Connect on LinkedIn
-                    </Button>
+                    
                   </div>
                 </CardContent>
               </Card>
@@ -153,8 +126,6 @@ const Contact = () => {
           </p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Contact;
