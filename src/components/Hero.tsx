@@ -23,9 +23,7 @@ const Hero = () => {
         <div className="text-center text-white">
           {/* Profile Image */}
           <div className="mb-8 animate-scale-in">
-            <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-glow border-4 border-white/20">
-              <img src={profileImage} alt="Kaveri Manga" className="w-full h-full object-cover" />
-            </div>
+            
           </div>
 
           {/* Main Content */}
