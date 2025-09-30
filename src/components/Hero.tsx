@@ -42,12 +42,7 @@ Kaveri Manga</h1>
                 View My Work
               </Button>
               <Button size="lg" variant="outline" asChild className="border-white/30 backdrop-blur-sm transition-smooth bg-indigo-300 hover:bg-indigo-200 text-slate-50">
-                <a
-                  href="https://drive.google.com/file/d/1lc-FTF7-tJAp9WStoaFIyhzYEEduwy51/view"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View Kaveri resume"
-                >
+                <a href="https://drive.google.com/file/d/1lc-FTF7-tJAp9WStoaFIyhzYEEduwy51/view" target="_blank" rel="noopener noreferrer" aria-label="View Kaveri resume">
                   <Download className="mr-2 h-4 w-4" />
                   Download Resume
                 </a>
