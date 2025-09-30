@@ -6,16 +6,29 @@ const About = () => {
   const achievements = ["99.17% in SSC Board Examinations", "89.5% in Intermediate Board", "78.44% Current CGPA in B.Tech", "Multiple Technical Internships", "AI/ML Competition Participant"];
   return <section id="about" className="py-20 bg-gradient-soft">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-4">About Me</h2>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            I am a versatile professional skilled in data analysis, machine learning engineering, Python development and web development. 
-            With a passion for leveraging data-driven insights and cutting-edge technologies, I excel at uncovering patterns, 
-            developing impactful solutions, and crafting robust applications.
-          </p>
-        </div>
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-4">About Me</h2>
+        <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-6">
+          I am a versatile professional skilled in data analysis, machine learning engineering, Python development and web development. 
+          With a passion for leveraging data-driven insights and cutting-edge technologies, I excel at uncovering patterns, 
+          developing impactful solutions, and crafting robust applications.
+        </p>
+        <a 
+          href="https://drive.google.com/file/d/1lc-FTF7-tJAp9WStoaFIyhzYEEduwy51/view?usp=drivesdk" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-primary text-white rounded-lg hover:opacity-90 transition-smooth shadow-elegant"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download Resume
+        </a>
+      </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {/* Education */}
           <Card className="shadow-elegant hover-glow transition-smooth">
             <CardContent className="p-6">
