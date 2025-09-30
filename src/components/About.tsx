@@ -14,10 +14,9 @@ const About = () => {
           developing impactful solutions, and crafting robust applications.
         </p>
         <a 
-          href="https://drive.google.com/uc?export=download&id=1lc-FTF7-tJAp9WStoaFIyhzYEEduwy51" 
+          href="https://drive.google.com/file/d/1lc-FTF7-tJAp9WStoaFIyhzYEEduwy51/view" 
           target="_blank"
           rel="noopener noreferrer"
-          download="Kaveri-Resume.pdf"
           className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-primary text-white rounded-lg hover:opacity-90 transition-smooth shadow-elegant"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
