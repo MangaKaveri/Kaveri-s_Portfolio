@@ -14,7 +14,7 @@ const About = () => {
           developing impactful solutions, and crafting robust applications.
         </p>
         <a 
-          href="https://drive.google.com/file/d/1lc-FTF7-tJAp9WStoaFIyhzYEEduwy51/view?usp=drivesdk" 
+          href="https://drive.google.com/uc?export=download&id=1lc-FTF7-tJAp9WStoaFIyhzYEEduwy51" 
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-primary text-white rounded-lg hover:opacity-90 transition-smooth shadow-elegant"
