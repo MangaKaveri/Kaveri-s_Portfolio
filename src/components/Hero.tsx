@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, Download, ArrowDown } from "lucide-react";
+import { Github, Linkedin, Mail, Download, ArrowDown, Link } from "lucide-react";
 import profileImage from "@/assets/kaveri-profile.jpg";
 const Hero = () => {
   const scrollToSection = (href: string) => {
@@ -65,6 +65,9 @@ Kaveri Manga</h1>
               </a>
               <a href="https://github.com/MangaKaveri" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-smooth hover:scale-110 transform" aria-label="GitHub">
                 <Github className="h-6 w-6" />
+              </a>
+              <a href="https://linktr.ee/MangaKaveri" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white transition-smooth hover:scale-110 transform" aria-label="Linktree">
+                <Link className="h-6 w-6" />
               </a>
             </div>
 
