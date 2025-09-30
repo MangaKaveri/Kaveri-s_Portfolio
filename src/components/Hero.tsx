@@ -41,9 +41,17 @@ Kaveri Manga</h1>
               <Button size="lg" variant="secondary" onClick={() => scrollToSection("#projects")} className="text-white border-white/30 backdrop-blur-sm transition-smooth hover-glow bg-indigo-300 hover:bg-indigo-200">
                 View My Work
               </Button>
-              <Button size="lg" variant="outline" onClick={() => scrollToSection("#contact")} className="border-white/30 backdrop-blur-sm transition-smooth bg-indigo-300 hover:bg-indigo-200 text-slate-50">
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
+              <Button size="lg" variant="outline" asChild className="border-white/30 backdrop-blur-sm transition-smooth bg-indigo-300 hover:bg-indigo-200 text-slate-50">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1lc-FTF7-tJAp9WStoaFIyhzYEEduwy51"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="Kaveri-Resume.pdf"
+                  aria-label="Download Kaveri resume"
+                >
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
+                </a>
               </Button>
             </div>
 

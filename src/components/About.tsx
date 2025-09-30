@@ -15,6 +15,8 @@ const About = () => {
         </p>
         <a 
           href="https://drive.google.com/uc?export=download&id=1lc-FTF7-tJAp9WStoaFIyhzYEEduwy51" 
+          target="_blank"
+          rel="noopener noreferrer"
           download="Kaveri-Resume.pdf"
           className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-primary text-white rounded-lg hover:opacity-90 transition-smooth shadow-elegant"
         >
