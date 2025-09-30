@@ -121,9 +121,7 @@ const Contact = () => {
 
         {/* Footer */}
         <div className="mt-16 pt-8 border-t border-white/20 text-center">
-          <p className="text-white/60 text-sm">
-            © 2024 Kaveri Manga. Built with React, TypeScript, and Tailwind CSS.
-          </p>
+          
         </div>
       </div>
     </section>;
