@@ -14,7 +14,7 @@ const About = () => {
           developing impactful solutions, and crafting robust applications.
         </p>
         <a 
-          href="/assets/Kaveri-Resume.pdf" 
+          href="https://drive.google.com/uc?export=download&id=1lc-FTF7-tJAp9WStoaFIyhzYEEduwy51" 
           target="_blank"
           rel="noopener noreferrer"
           download="Kaveri-Resume.pdf"
