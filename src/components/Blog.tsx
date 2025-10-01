@@ -32,56 +32,7 @@ const Blog = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {blogPosts.map((post, index) => {
-          const IconComponent = post.icon;
-          return <Card key={index} className="shadow-elegant hover-glow transition-smooth animate-scale-in group cursor-pointer" style={{
-            animationDelay: `${index * 0.1}s`
-          }}>
-                <CardHeader>
-                  <div className="flex items-center justify-between mb-3">
-                    <Badge variant="secondary" className="text-xs">
-                      {post.category}
-                    </Badge>
-                    <div className="flex items-center text-muted-foreground text-xs">
-                      <Calendar className="h-3 w-3 mr-1" />
-                      {new Date(post.date).toLocaleDateString('en-US', {
-                    month: 'short',
-                    day: 'numeric',
-                    year: 'numeric'
-                  })}
-                    </div>
-                  </div>
-                  <CardTitle className="flex items-start text-lg leading-tight">
-                    <IconComponent className="h-5 w-5 text-primary mr-2 mt-1 flex-shrink-0" />
-                    <span>{post.title}</span>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {post.excerpt}
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2">
-                    {post.tags.map((tag, tagIndex) => <Badge key={tagIndex} variant="outline" className="text-xs">
-                        {tag}
-                      </Badge>)}
-                  </div>
-
-                  <div className="flex items-center justify-between pt-2">
-                    <span className="text-xs text-muted-foreground flex items-center">
-                      <BookOpen className="h-3 w-3 mr-1" />
-                      {post.readTime}
-                    </span>
-                    <Button variant="ghost" size="sm" className="text-primary group-hover:translate-x-1 transition-transform">
-                      Read More
-                      <ArrowRight className="h-4 w-4 ml-1" />
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>;
-        })}
-        </div>
+        
 
         {/* Coming Soon Message */}
         <div className="mt-12 text-center">
