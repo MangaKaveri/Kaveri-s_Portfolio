@@ -23,7 +23,13 @@ const Hero = () => {
         <div className="text-center text-white">
           {/* Profile Image */}
           <div className="mb-8 animate-scale-in">
-            
+            <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-white/30 shadow-elegant">
+              <img 
+                src={profileImage} 
+                alt="Kaveri Manga - Data Scientist and Machine Learning Engineer" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
 
           {/* Main Content */}
@@ -31,7 +37,7 @@ const Hero = () => {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
 
 Kaveri Manga</h1>
-            <h2 className="text-xl md:text-2xl lg:text-3xl mb-6 text-white/90">Data Analyst & Machine Learning Engineer</h2>
+            <h2 className="text-xl md:text-2xl lg:text-3xl mb-6 text-white/90" role="doc-subtitle">Data Scientist & Machine Learning Engineer</h2>
             <p className="text-lg md:text-xl mb-8 text-white/80 max-w-3xl mx-auto">
               Passionate about leveraging data-driven insights and cutting-edge technologies to develop impactful solutions
             </p>

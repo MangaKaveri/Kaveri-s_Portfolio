@@ -119,9 +119,11 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Footer */}
+        {/* Additional CTA */}
         <div className="mt-16 pt-8 border-t border-white/20 text-center">
-          
+          <p className="text-white/80 text-sm">
+            Looking forward to connecting with you and exploring opportunities to collaborate on innovative projects.
+          </p>
         </div>
       </div>
     </section>;
