@@ -85,24 +85,7 @@ const Blog = () => {
 
         {/* Coming Soon Message */}
         <div className="mt-12 text-center">
-          <Card className="shadow-elegant max-w-2xl mx-auto">
-            <CardContent className="p-8">
-              <BookOpen className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-semibold mb-4">More Articles Coming Soon</h3>
-              <p className="text-muted-foreground mb-6">
-                I'm continuously writing about data science, machine learning, and emerging technologies. 
-                Subscribe to stay updated with the latest insights and tutorials.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="outline">
-                  Subscribe to Newsletter
-                </Button>
-                <Button variant="secondary">
-                  View All Articles
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+          
         </div>
       </div>
     </section>;
