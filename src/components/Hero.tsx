@@ -30,6 +30,8 @@ const Hero = () => {
           <div className="animate-fade-in">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">
 
+
+
 Kaveri Manga</h1>
             <h2 className="text-xl md:text-2xl lg:text-3xl mb-6 text-white/90" role="doc-subtitle">Data Scientist & Machine Learning Engineer</h2>
             <p className="text-lg md:text-xl mb-8 text-white/80 max-w-3xl mx-auto">
