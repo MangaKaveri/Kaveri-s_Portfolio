@@ -1,62 +1,65 @@
 import { Github, Linkedin, Mail, Link, ArrowUp, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth"
     });
   };
-
-  const socialLinks = [
-    {
-      icon: Mail,
-      href: "mailto:mangakaveri05@gmail.com",
-      label: "Email",
-      color: "hover:text-primary"
-    },
-    {
-      icon: Linkedin,
-      href: "https://www.linkedin.com/in/mangakaveri/",
-      label: "LinkedIn",
-      color: "hover:text-secondary"
-    },
-    {
-      icon: Github,
-      href: "https://github.com/MangaKaveri",
-      label: "GitHub",
-      color: "hover:text-accent"
-    },
-    {
-      icon: Link,
-      href: "https://linktr.ee/MangaKaveri",
-      label: "Linktree",
-      color: "hover:text-primary"
-    }
-  ];
-
-  const navLinks = [
-    { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
-    { href: "#skills", label: "Skills" },
-    { href: "#experience", label: "Experience" },
-    { href: "#projects", label: "Projects" },
-    { href: "#blog", label: "Blog" },
-    { href: "#contact", label: "Contact" }
-  ];
-
+  const socialLinks = [{
+    icon: Mail,
+    href: "mailto:mangakaveri05@gmail.com",
+    label: "Email",
+    color: "hover:text-primary"
+  }, {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/mangakaveri/",
+    label: "LinkedIn",
+    color: "hover:text-secondary"
+  }, {
+    icon: Github,
+    href: "https://github.com/MangaKaveri",
+    label: "GitHub",
+    color: "hover:text-accent"
+  }, {
+    icon: Link,
+    href: "https://linktr.ee/MangaKaveri",
+    label: "Linktree",
+    color: "hover:text-primary"
+  }];
+  const navLinks = [{
+    href: "#home",
+    label: "Home"
+  }, {
+    href: "#about",
+    label: "About"
+  }, {
+    href: "#skills",
+    label: "Skills"
+  }, {
+    href: "#experience",
+    label: "Experience"
+  }, {
+    href: "#projects",
+    label: "Projects"
+  }, {
+    href: "#blog",
+    label: "Blog"
+  }, {
+    href: "#contact",
+    label: "Contact"
+  }];
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({
+        behavior: "smooth"
+      });
     }
   };
-
-  return (
-    <footer className="bg-gradient-soft border-t border-border">
+  return <footer className="bg-gradient-soft border-t border-border">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -69,37 +72,18 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => {
-                const IconComponent = social.icon;
-                return (
-                  <a
-                    key={index}
-                    href={social.href}
-                    target={social.href.startsWith("http") ? "_blank" : undefined}
-                    rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className={`text-muted-foreground ${social.color} transition-smooth transform hover:scale-110`}
-                    aria-label={social.label}
-                  >
+              const IconComponent = social.icon;
+              return <a key={index} href={social.href} target={social.href.startsWith("http") ? "_blank" : undefined} rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined} className={`text-muted-foreground ${social.color} transition-smooth transform hover:scale-110`} aria-label={social.label}>
                     <IconComponent className="h-5 w-5" />
-                  </a>
-                );
-              })}
+                  </a>;
+            })}
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
             <h4 className="font-semibold text-foreground mb-4">Quick Links</h4>
-            <nav className="space-y-2">
-              {navLinks.map((link, index) => (
-                <button
-                  key={index}
-                  onClick={() => scrollToSection(link.href)}
-                  className="block text-muted-foreground hover:text-primary transition-smooth text-sm"
-                >
-                  {link.label}
-                </button>
-              ))}
-            </nav>
+            
           </div>
 
           {/* Contact Info */}
@@ -116,17 +100,8 @@ const Footer = () => {
                 <span className="font-medium text-foreground">Location:</span><br />
                 Visakhapatnam, Andhra Pradesh, India
               </p>
-              <Button 
-                variant="outline" 
-                size="sm"
-                asChild
-                className="mt-4"
-              >
-                <a 
-                  href="https://drive.google.com/file/d/1lc-FTF7-tJAp9WStoaFIyhzYEEduwy51/view" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              <Button variant="outline" size="sm" asChild className="mt-4">
+                <a href="https://drive.google.com/file/d/1lc-FTF7-tJAp9WStoaFIyhzYEEduwy51/view" target="_blank" rel="noopener noreferrer">
                   Download Resume
                 </a>
               </Button>
@@ -145,20 +120,12 @@ const Footer = () => {
             and dedication to excellence.
           </p>
           
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={scrollToTop}
-            className="text-muted-foreground hover:text-primary"
-            aria-label="Scroll to top"
-          >
+          <Button variant="ghost" size="sm" onClick={scrollToTop} className="text-muted-foreground hover:text-primary" aria-label="Scroll to top">
             Back to Top
             <ArrowUp className="h-4 w-4 ml-2" />
           </Button>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
