@@ -87,26 +87,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h4 className="font-semibold text-foreground mb-4">Get In Touch</h4>
-            <div className="space-y-3 text-sm">
-              <p className="text-muted-foreground">
-                <span className="font-medium text-foreground">Email:</span><br />
-                <a href="mailto:mangakaveri05@gmail.com" className="hover:text-primary transition-smooth">
-                  mangakaveri05@gmail.com
-                </a>
-              </p>
-              <p className="text-muted-foreground">
-                <span className="font-medium text-foreground">Location:</span><br />
-                Visakhapatnam, Andhra Pradesh, India
-              </p>
-              <Button variant="outline" size="sm" asChild className="mt-4">
-                <a href="https://drive.google.com/file/d/1lc-FTF7-tJAp9WStoaFIyhzYEEduwy51/view" target="_blank" rel="noopener noreferrer">
-                  Download Resume
-                </a>
-              </Button>
-            </div>
-          </div>
+          
         </div>
 
         {/* Divider */}
