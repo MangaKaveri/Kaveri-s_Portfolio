@@ -16,7 +16,8 @@ const Projects = () => {
         "Interactive Streamlit dashboard",
         "Engagement strategy optimization recommendations"
       ],
-      color: "text-primary"
+      color: "text-primary",
+      githubUrl: "https://github.com/MangaKaveri/Project_Audience_Perspective_Analyzer"
     },
     {
       title: "Simple Emotion Detector",
@@ -29,7 +30,8 @@ const Projects = () => {
         "Trained on FER2013 dataset",
         "85% accuracy on benchmark datasets"
       ],
-      color: "text-secondary"
+      color: "text-secondary",
+      githubUrl: "https://github.com/MangaKaveri/Project_1_Emotion_Detector"
     }
   ];
 
@@ -87,11 +89,21 @@ const Projects = () => {
 
                   {/* Action Buttons */}
                   <div className="flex gap-3 pt-4">
-                    <Button variant="outline" size="sm" className="flex items-center">
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="flex items-center"
+                      onClick={() => window.open(project.githubUrl, "_blank")}
+                    >
                       <Github className="h-4 w-4 mr-2" />
                       View Code
                     </Button>
-                    <Button variant="secondary" size="sm" className="flex items-center">
+                    <Button 
+                      variant="secondary" 
+                      size="sm" 
+                      className="flex items-center"
+                      onClick={() => window.open(project.githubUrl, "_blank")}
+                    >
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Live Demo
                     </Button>
