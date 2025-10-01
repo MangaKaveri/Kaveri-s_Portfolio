@@ -2,58 +2,42 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Calendar, ArrowRight, TrendingUp, Brain, Code2 } from "lucide-react";
-
 const Blog = () => {
-  const blogPosts = [
-    {
-      title: "Understanding Neural Networks: A Practical Guide",
-      excerpt: "Explore the fundamentals of neural networks and how they power modern AI applications. Learn about activation functions, backpropagation, and optimization techniques.",
-      date: "2024-03-15",
-      category: "Machine Learning",
-      readTime: "8 min read",
-      icon: Brain,
-      tags: ["Deep Learning", "Neural Networks", "AI"]
-    },
-    {
-      title: "Data Preprocessing Best Practices for ML Models",
-      excerpt: "Discover essential data preprocessing techniques that can significantly improve your machine learning model performance and accuracy.",
-      date: "2024-03-08",
-      category: "Data Science",
-      readTime: "6 min read",
-      icon: TrendingUp,
-      tags: ["Data Science", "Preprocessing", "ML"]
-    },
-    {
-      title: "Building Production-Ready ML Pipelines",
-      excerpt: "Learn how to create scalable, maintainable machine learning pipelines that can handle real-world production environments and evolving data.",
-      date: "2024-02-28",
-      category: "MLOps",
-      readTime: "10 min read",
-      icon: Code2,
-      tags: ["MLOps", "Production", "Pipelines"]
-    }
-  ];
-
-  return (
-    <section id="blog" className="py-20 bg-background">
+  const blogPosts = [{
+    title: "Understanding Neural Networks: A Practical Guide",
+    excerpt: "Explore the fundamentals of neural networks and how they power modern AI applications. Learn about activation functions, backpropagation, and optimization techniques.",
+    date: "2024-03-15",
+    category: "Machine Learning",
+    readTime: "8 min read",
+    icon: Brain,
+    tags: ["Deep Learning", "Neural Networks", "AI"]
+  }, {
+    title: "Data Preprocessing Best Practices for ML Models",
+    excerpt: "Discover essential data preprocessing techniques that can significantly improve your machine learning model performance and accuracy.",
+    date: "2024-03-08",
+    category: "Data Science",
+    readTime: "6 min read",
+    icon: TrendingUp,
+    tags: ["Data Science", "Preprocessing", "ML"]
+  }, {
+    title: "Building Production-Ready ML Pipelines",
+    excerpt: "Learn how to create scalable, maintainable machine learning pipelines that can handle real-world production environments and evolving data.",
+    date: "2024-02-28",
+    category: "MLOps",
+    readTime: "10 min read",
+    icon: Code2,
+    tags: ["MLOps", "Production", "Pipelines"]
+  }];
+  return <section id="blog" className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-4">Blog & Insights</h2>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-            Sharing knowledge and insights about data science, machine learning, and AI. 
-            Exploring concepts, best practices, and emerging trends in the field.
-          </p>
-        </div>
+        
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {blogPosts.map((post, index) => {
-            const IconComponent = post.icon;
-            return (
-              <Card 
-                key={index} 
-                className="shadow-elegant hover-glow transition-smooth animate-scale-in group cursor-pointer"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
+          const IconComponent = post.icon;
+          return <Card key={index} className="shadow-elegant hover-glow transition-smooth animate-scale-in group cursor-pointer" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <CardHeader>
                   <div className="flex items-center justify-between mb-3">
                     <Badge variant="secondary" className="text-xs">
@@ -61,11 +45,11 @@ const Blog = () => {
                     </Badge>
                     <div className="flex items-center text-muted-foreground text-xs">
                       <Calendar className="h-3 w-3 mr-1" />
-                      {new Date(post.date).toLocaleDateString('en-US', { 
-                        month: 'short', 
-                        day: 'numeric',
-                        year: 'numeric'
-                      })}
+                      {new Date(post.date).toLocaleDateString('en-US', {
+                    month: 'short',
+                    day: 'numeric',
+                    year: 'numeric'
+                  })}
                     </div>
                   </div>
                   <CardTitle className="flex items-start text-lg leading-tight">
@@ -79,11 +63,9 @@ const Blog = () => {
                   </p>
                   
                   <div className="flex flex-wrap gap-2">
-                    {post.tags.map((tag, tagIndex) => (
-                      <Badge key={tagIndex} variant="outline" className="text-xs">
+                    {post.tags.map((tag, tagIndex) => <Badge key={tagIndex} variant="outline" className="text-xs">
                         {tag}
-                      </Badge>
-                    ))}
+                      </Badge>)}
                   </div>
 
                   <div className="flex items-center justify-between pt-2">
@@ -91,19 +73,14 @@ const Blog = () => {
                       <BookOpen className="h-3 w-3 mr-1" />
                       {post.readTime}
                     </span>
-                    <Button 
-                      variant="ghost" 
-                      size="sm" 
-                      className="text-primary group-hover:translate-x-1 transition-transform"
-                    >
+                    <Button variant="ghost" size="sm" className="text-primary group-hover:translate-x-1 transition-transform">
                       Read More
                       <ArrowRight className="h-4 w-4 ml-1" />
                     </Button>
                   </div>
                 </CardContent>
-              </Card>
-            );
-          })}
+              </Card>;
+        })}
         </div>
 
         {/* Coming Soon Message */}
@@ -128,8 +105,6 @@ const Blog = () => {
           </Card>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Blog;
