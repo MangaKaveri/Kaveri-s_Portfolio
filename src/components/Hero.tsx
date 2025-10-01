@@ -33,7 +33,7 @@ const Hero = () => {
 
 
 Kaveri Manga</h1>
-            <h2 className="text-xl md:text-2xl lg:text-3xl mb-6 text-white/90" role="doc-subtitle">Data Scientist & Machine Learning Engineer</h2>
+            <h2 className="text-xl md:text-2xl lg:text-3xl mb-6 text-white/90" role="doc-subtitle">Data Analyst & Machine Learning Engineer</h2>
             <p className="text-lg md:text-xl mb-8 text-white/80 max-w-3xl mx-auto">
               Passionate about leveraging data-driven insights and cutting-edge technologies to develop impactful solutions
             </p>
