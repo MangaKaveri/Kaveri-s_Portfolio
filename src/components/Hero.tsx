@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download, ArrowDown, Link } from "lucide-react";
 import profileImage from "@/assets/kaveri-profile.jpg";
+import ParticleBackground from "@/components/ParticleBackground";
 const Hero = () => {
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -11,6 +12,7 @@ const Hero = () => {
     }
   };
   return <section id="home" className="min-h-screen flex items-center justify-center gradient-primary relative overflow-hidden">
+      <ParticleBackground />
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 rounded-full bg-white/10 animate-float"></div>

@@ -11,19 +11,16 @@ import ParticleBackground from "@/components/ParticleBackground";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background relative">
-      <ParticleBackground />
-      <div className="relative z-10">
-        <Navigation />
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Blog />
-        <Contact />
-        <Footer />
-      </div>
+    <div className="min-h-screen bg-background">
+      <Navigation />
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Blog />
+      <Contact />
+      <Footer />
     </div>
   );
 };

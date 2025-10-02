@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, Link, ArrowUp, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ParticleBackground from "@/components/ParticleBackground";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const scrollToTop = () => {
@@ -61,8 +62,9 @@ const Footer = () => {
   };
   
   return (
-    <footer className="bg-card border-t border-border">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="bg-card border-t border-border relative overflow-hidden">
+      <ParticleBackground />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
           <div className="space-y-4">

@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Github, MapPin, Phone } from "lucide-react";
+import ParticleBackground from "@/components/ParticleBackground";
 const Contact = () => {
   const contactInfo = [{
     icon: Mail,
@@ -28,6 +29,7 @@ const Contact = () => {
     color: "text-muted-foreground"
   }];
   return <section id="contact" className="py-20 gradient-primary relative overflow-hidden">
+      <ParticleBackground />
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 rounded-full bg-white/5 animate-float"></div>
