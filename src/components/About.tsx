@@ -13,19 +13,7 @@ const About = () => {
           With a passion for leveraging data-driven insights and cutting-edge technologies, I excel at uncovering patterns, 
           developing impactful solutions, and crafting robust applications.
         </p>
-        <a 
-          href="https://drive.google.com/file/d/1lc-FTF7-tJAp9WStoaFIyhzYEEduwy51/view" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-primary text-white rounded-lg hover:opacity-90 transition-smooth shadow-elegant"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-            <polyline points="7 10 12 15 17 10"/>
-            <line x1="12" y1="15" x2="12" y2="3"/>
-          </svg>
-          Download Resume
-        </a>
+        
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
