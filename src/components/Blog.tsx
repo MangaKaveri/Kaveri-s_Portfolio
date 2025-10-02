@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Calendar, ArrowRight, TrendingUp, Brain, Code2 } from "lucide-react";
+import ParticleBackground from "@/components/ParticleBackground";
 const Blog = () => {
   const blogPosts = [{
     title: "Understanding Neural Networks: A Practical Guide",
@@ -28,8 +29,9 @@ const Blog = () => {
     icon: Code2,
     tags: ["MLOps", "Production", "Pipelines"]
   }];
-  return <section id="blog" className="py-20 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+  return <section id="blog" className="py-20 bg-background relative overflow-hidden">
+      <ParticleBackground />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
 
         

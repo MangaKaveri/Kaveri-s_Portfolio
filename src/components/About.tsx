@@ -1,11 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Award, Trophy } from "lucide-react";
+import ParticleBackground from "@/components/ParticleBackground";
 const About = () => {
   const certifications = ["AI/ML for Geodata Analysis – ISRO", "Python for Data Science – IIT Madras", "Generative AI – NxtWave", "Data Science & Visualization – IBM", "Cybersecurity Fundamentals – Cisco", "Google Cloud Generative AI – Google"];
   const achievements = ["99.17% in SSC Board Examinations", "89.5% in Intermediate Board", "78.44% Current CGPA in B.Tech", "Multiple Technical Internships", "AI/ML Competition Participant"];
-  return <section id="about" className="py-20 bg-gradient-soft">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+  return <section id="about" className="py-20 bg-gradient-soft relative overflow-hidden">
+      <ParticleBackground />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-4">About Me</h2>
         <p className="text-muted-foreground text-lg max-w-3xl mx-auto mb-6">

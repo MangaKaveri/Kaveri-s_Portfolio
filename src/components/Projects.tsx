@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Brain, Camera } from "lucide-react";
+import ParticleBackground from "@/components/ParticleBackground";
 
 const Projects = () => {
   const projects = [
@@ -36,8 +37,9 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="projects" className="py-20 bg-background relative overflow-hidden">
+      <ParticleBackground />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-4">Featured Projects</h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">

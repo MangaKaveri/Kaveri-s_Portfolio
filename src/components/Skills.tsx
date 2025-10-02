@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code, Database, Brain, BarChart3, Cloud, Wrench } from "lucide-react";
+import ParticleBackground from "@/components/ParticleBackground";
 
 const Skills = () => {
   const skillCategories = [
@@ -52,8 +53,9 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="skills" className="py-20 bg-background relative overflow-hidden">
+      <ParticleBackground />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-4">Skills & Expertise</h2>
           <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
