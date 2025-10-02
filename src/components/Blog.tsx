@@ -29,18 +29,6 @@ const Blog = () => {
     icon: Code2,
     tags: ["MLOps", "Production", "Pipelines"]
   }];
-  return <section id="blog" className="py-20 bg-background relative overflow-hidden">
-      <ParticleBackground />
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
-
-        
-
-        {/* Coming Soon Message */}
-        <div className="mt-12 text-center">
-          
-        </div>
-      </div>
-    </section>;
+  return;
 };
 export default Blog;
